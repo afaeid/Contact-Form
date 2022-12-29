@@ -30,11 +30,14 @@ form input, textarea{
   padding: 10px;
   margin: 10px 0;
   color: #fff;
+  transition: 100ms ease-in;
+  transition-property: border;
 }
 form input{
   height: 40px;
   padding: 0 10px;
 }
+
 form .row{
   position: relative;
 }
@@ -44,7 +47,10 @@ form label{
   left: 6px;
   font-size: 16px;
   background: #42445A;
-  padding: 0 5px;
+  padding: 0 3px;
+  transition: 100ms ease-in;
+  transition-property: top, font-size, color;
+  pointer-events: none;
 }
 form button{
   border: 1px solid #fff;
@@ -67,11 +73,10 @@ form button svg{
 form input:focus, textarea:focus{
   border: 1px solid #FFE75E;
 }
-form .input:focus  ~ label, form .input:not(:placeholder-shown).input:not(:focus) ~ label{
-  top: 0;
-  font-size: 14px;
+form .input:focus ~ label{
+    color: #FFE75E;;
 }
-form textarea:focus  ~ label{
-  top: 0;
-  font-size: 14px;
+form .input:focus  ~ label, form .input:not(:placeholder-shown).input:not(:focus) ~ label{
+  top: 1px;
+  font-size: 12px;
 }
