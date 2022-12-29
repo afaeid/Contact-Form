@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  background: #42445A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  color: #F3F3F3;
+  margin: 0 10px;
+}
+form h1{
+  font-weight: 800;
+}
+form input, textarea{
+  border: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px 0;
+  color: #fff;
+}
+form input{
+  height: 40px;
+  padding: 0 10px;
+}
+form .row{
+  position: relative;
+}
+form label{
+  position: absolute;
+  top: 18px;
+  left: 6px;
+  font-size: 16px;
+  background: #42445A;
+  padding: 0 5px;
+}
+form button{
+  border: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  float: right;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+}
+form button:hover{
+  border: 1px solid #FFE75E
+  }
+form button svg{
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  transform: translateY(2px)
+}
+form input:focus, textarea:focus{
+  border: 1px solid #FFE75E;
+}
+form .input:focus  ~ label, form .input:not(:placeholder-shown).input:not(:focus) ~ label{
+  top: 0;
+  font-size: 14px;
+}
+form textarea:focus  ~ label{
+  top: 0;
+  font-size: 14px;
+}
